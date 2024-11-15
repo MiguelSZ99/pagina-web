@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Definición de los metadatos de la página -->
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+    <title>Restaurante - Menú Principal</title> <!-- Título de la pestaña del navegador -->
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Enlaza la hoja de estilos externa -->
+    <style>
+        /* Aquí estamos cambiando el tamaño del logo */
+        .logo img {
+            width: 200px; /* Ajusta el tamaño del logo, aquí lo hacemos más grande */
+            height: auto; /* Mantiene las proporciones del logo */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo que lleva a la página principal -->
+        <a href="index.html" class="logo"><img src="img/logo.jpeg" alt="Logo del Restaurante"></a>
+        
+        <!-- Menú de navegación con enlaces a otras páginas -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página principal -->
+                <li><a href="paginas/menu-comida.html">Menú Comida</a></li> <!-- Enlace al menú de comida -->
+                <li><a href="paginas/galeria.html">Galería</a></li> <!-- Enlace a la galería de imágenes -->
+                <li><a href="paginas/promociones.html">Promociones</a></li> <!-- Enlace a las promociones -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Título principal de la página -->
+        <h1>Bienvenido a Casa De Miguel</h1>
+        <p>Descubre nuestros deliciosos platillos y disfruta de una experiencia gastronómica única.</p>
+
+        <!-- Sección para un video que muestra los platillos del restaurante -->
+        <section class="video-section">
+            <h2>Descubre Nuestros Platillos</h2>
+            <video controls autoplay loop muted>
+                <source src="img/7772228-hd_1920_1080_24fps.mp4" type="video/mp4"> <!-- Video con los platillos -->
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </section>
+
+        <!-- Galería de imágenes de los platillos -->
+        <section class="gallery-section">
+            <h2>Nuestra Galería</h2>
+            <div class="gallery">
+                <!-- Cada item de la galería tiene una imagen y un título -->
+                <div class="gallery-item">
+                    <h3>Pozole</h3>
+                    <img src="img/pozole.jpeg" alt="Plato 1">
+                </div>
+                <div class="gallery-item">
+                    <h3>Tinga</h3>
+                    <img src="img/tinga.jpeg" alt="Plato 2">
+                </div>
+                <div class="gallery-item">
+                    <h3>Chilaquiles</h3>
+                    <img src="img/chilaquiles.jpg" alt="Plato 3">
+                </div>
+                <div class="gallery-item">
+                    <h3>Cochinita Pibil</h3>
+                    <img src="img/cochinitapibil.jpeg" alt="Plato 4">
+                </div>
+                <div class="gallery-item">
+                    <h3>Pollo a la Jardinera</h3>
+                    <img src="img/maxresdefault.jpg" alt="Plato 5">
+                </div>
+                <div class="gallery-item">
+                    <h3>Huevos Divorciados</h3>
+                    <img src="img/huevosdiv.jpg" alt="Plato 6">
+                </div>
+                <div class="gallery-item">
+                    <h3>Enchiladas de mole</h3>
+                    <img src="img/enchiladas de mole.jpg" alt="Plato 7">
+                </div>
+                <div class="gallery-item">
+                    <h3>Tostadas de Camaron</h3>
+                    <img src="img/tostadas-de-camarón.jpg" alt="Plato 8">
+                </div>
+                <div class="gallery-item">
+                    <h3>Flautas de Pollo</h3>
+                    <img src="img/flautas.jpg" alt="Plato 8">
+                </div>
+                <div class="gallery-item">
+                    <h3>Flautas de Res</h3>
+                    <img src="img/flautas de res.jpg" alt="Plato 8">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página con mi inf -->
+    <footer>
+        <p>Contacto: Soancatl Zacamitzin Miguel Angel | Paginas web 1</p>
+    </footer>
+</body>
+</html>

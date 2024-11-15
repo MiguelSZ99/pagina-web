@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Definición de los metadatos de la página -->
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+    <title>Restaurante - Menú Comida</title> <!-- Título de la pestaña del navegador -->
+    <link rel="stylesheet" href="../css/estilos.css"> <!-- Enlaza la hoja de estilos externa -->
+    
+    <!-- Estilos adicionales para organizar los items del menú -->
+    <style>
+        /* Estilo adicional para visualizar los items del menú en fila */
+        .menu-items {
+            display: flex;
+            justify-content: space-around; /* Espacio equitativo entre los elementos */
+            gap: 2rem; /* Espacio entre los items */
+            flex-wrap: wrap; /* Permite que los elementos se ajusten cuando la pantalla es pequeña */
+        }
+
+        .menu-item {
+            text-align: center;
+            width: 200px; /* Ancho fijo para cada item */
+        }
+
+        .menu-item img {
+            width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+            height: auto; /* Mantiene la relación de aspecto de la imagen */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto más profundo */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo que lleva a la página principal -->
+        <a href="../index.html" class="logo"><img src="../img/logo.jpeg" alt="Logo del Restaurante"></a>
+        
+        <!-- Menú de navegación con enlaces a otras páginas -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li> <!-- Enlace a la página principal -->
+                <li><a href="menu-comida.html">Menú Comida</a></li> <!-- Enlace al menú de comida -->
+                <li><a href="galeria.html">Galería</a></li> <!-- Enlace a la galería de imágenes -->
+                <li><a href="promociones.html">Promociones</a></li> <!-- Enlace a la página de promociones -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Título principal de la página -->
+        <h1>Menú de Comida</h1>
+        <p>Conoce nuestros deliciosos platillos.</p>
+
+        <!-- Sección de Platos Principales -->
+        <section class="menu-category">
+            <h2>Platos Principales</h2>
+            <div class="menu-items">
+                <!-- Cada item del menú tiene un título, una imagen y una descripción -->
+                <div class="menu-item">
+                    <h3>Pozole</h3>
+                    <img src="../img/pozole.jpeg" alt="Pozole">
+                </div>
+
+                <div class="menu-item">
+                    <h3>Tacos de Carnitas</h3>
+                    <img src="../img/tacos-carnitas.jpg" alt="Tacos de Carnitas">
+                </div>
+
+                <div class="menu-item">
+                    <h3>Tacos de Canasta</h3>
+                    <img src="../img/receta-tacos-de-canasta-634x420.jpg" alt="Tacos de Canasta">
+                </div>
+
+                <div class="menu-item">
+                    <h3>Tacos de Barbacoa</h3>
+                    <img src="../img/tacos de barbacoa.jpeg" alt="Tacos de Barbacoa">
+                </div>
+
+                <div class="menu-item">
+                    <h3>Burritos</h3>
+                    <img src="../img/burritos.jpg" alt="Burritos">
+                </div>
+
+                <div class="menu-item">
+                    <h3>Pizza</h3>
+                    <img src="../img/pizza.jpg" alt="Pizza">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Bebidas -->
+        <section class="menu-category">
+            <h2>Bebidas</h2>
+            <div class="menu-items">
+                <!-- Cada bebida tiene un título, una imagen y una descripción -->
+                <div class="menu-item">
+                    <h3>Agua de Horchata</h3>
+                    <img src="../img/horchata.jpg" alt="Agua de Horchata">
+                </div>
+                <div class="menu-item">
+                    <h3>Cerveza Artesanal</h3>
+                    <img src="../img/cerveza.jpg" alt="Cerveza Artesanal">
+                </div>
+                <div class="menu-item">
+                    <h3>Jugo de Naranja Natural</h3>
+                    <img src="../img/naranja.jpeg" alt="Jugo de Naranja Natural">
+                </div>
+                <div class="menu-item">
+                    <h3>Tequila</h3>
+                    <img src="../img/tequila.jpg" alt="Tequila">
+                </div>
+                <div class="menu-item">
+                    <h3>Vino Tinto</h3>
+                    <img src="../img/vino.jpg" alt="Vino Tinto">
+                </div>
+                <div class="menu-item">
+                    <h3>Agua Simple</h3>
+                    <img src="../img/agua.jpeg" alt="Agua Mineral">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Postres -->
+        <section class="menu-category">
+            <h2>Postres</h2>
+            <div class="menu-items">
+                <!-- Cada postre tiene un título, una imagen y una descripción -->
+                <div class="menu-item">
+                    <h3>Flan</h3>
+                    <img src="../img/flan.jpg" alt="Flan">
+                </div>
+                <div class="menu-item">
+                    <h3>Pastel de Tres Leches</h3>
+                    <img src="../img/pastel.jpg" alt="Pastel de Tres Leches">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Paquetes -->
+        <section class="menu-category">
+            <h2>Paquetes</h2>
+            <div class="menu-items">
+                <!-- Cada paquete tiene un título, una imagen y una descripción -->
+                <div class="menu-item">
+                    <h3>Molcajete</h3>
+                    <img src="../img/molcajete.jpg" alt="Paquete Luna Familiar">
+                </div>
+                <div class="menu-item">
+                    <h3>1 kg de Carnitas</h3>
+                    <img src="../img/carnitas 1 kg.jpg" alt="Paquete de Cena">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Información de contacto  -->
+        <p>Contacto: Soancatl Zacamitzin Miguel Angel | Paginas web 1</p>
+    </footer>
+</body>
+</html>
